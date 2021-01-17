@@ -1,45 +1,33 @@
 {
-"type": "FeatureCollection",
-"features": [
-
-    {
-        "type": "Feature",
-        "geometry": { "type": "Point", "coordinates": [-3.216660, 54.456070] },
-        "properties": {
-            "Icon": "Icon1",
-            "Street": "street one",
-            "City": " city here",
-            "State": " state here",
-            "Zip": " ZIP 1",
-            "Misc": " some misc 1"
-        }
-
-    },
-
-    {
-        "type": "Feature",
-        "geometry": { "type": "Point", "coordinates": [-0.551140, 51.202747] },
-        "properties": {
-            "Icon": "Icon2",
-            "Street": "street TWO",
-            "City": " city here",
-            "State": " state here",
-            "Zip": " ZIP 2",
-            "Misc": " some misc 2"
-        }
-
-    },
-
-    {
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [30.167153, -97.7430608]
-  },
-  "properties": {
-    "name": "fortune island"
-  }
-}
-
-]
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.570525,
+               30.482996
+            ]
+         },
+         "properties":{
+            "Name":"Old Barn",
+            "Verified":"No"
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.679479,
+               30.398419
+            ]
+         },
+         "properties":{
+            "Name":"Abandoned Zoo",
+            "Verified":"No"
+         }
+      }
+   ]
 }
