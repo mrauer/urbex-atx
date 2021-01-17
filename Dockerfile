@@ -4,7 +4,6 @@ RUN apk add --no-cache python3 bash
 
 WORKDIR /usr/src/app
 
-COPY ./bucket/ .
-COPY run.sh .
+COPY bucket/ .
 
 CMD ["./run.sh"]
