@@ -1,36 +1,38 @@
-<html>
-<head>
-  <title>A Leaflet map!</title>
-  <link rel="stylesheet" href="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.css" />
-  <script src="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <style>
-    #map{ height: 100% }
-  </style>
-</head>
-<body>
-
-  <div id="map"></div>
-
-  <script>
-
-  // initialize the map
-  var map = L.map('map').setView([42.2, -71], 12);
-
-  // load a tile layer
-  L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
-    {
-      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
-      maxZoom: 17,
-      minZoom: 9
-    }).addTo(map);
-
-  // load GeoJSON from an external file
-  $.getJSON("data.geojson",function(data){
-    // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
-  });
-
-  </script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Austin Urbex Map</title>
+      <link rel="stylesheet" href="//unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+      <style>
+         #map {
+         height: 100%;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="map"></div>
+      <script src="//unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+         var map = L.map("map", {
+             center: [30.267153, -97.7430608],
+             zoom: 10,
+             maxZoom: 17,
+             minZoom: 9,
+         });
+         L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+             id: "examples.map-20v6611k",
+         }).addTo(map);
+         
+         $.getJSON("data.geojson", function(data) {
+         function onEachFeature(feature, layer) {
+         layer.bindPopup("Name: <strong>" + feature.properties.Name + "</strong><br>" + "Verified: " + feature.properties.Verified);
+         }   
+         var geojson = L.geoJson(data, {
+         onEachFeature: onEachFeature
+         });
+         geojson.addTo(map);
+         });
+      </script>
+   </body>
 </html>
