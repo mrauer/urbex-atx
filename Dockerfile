@@ -1,9 +1,13 @@
 FROM alpine:3.7
 
-RUN apk add --no-cache python3 bash
+RUN apk add --no-cache python3 bash make
 
 WORKDIR /usr/src/app
 
-COPY bucket/ .
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir --upgrade pip==21.0 && \
+    pip3 install --no-cache-dir -r requirements.txt
 
-CMD ["./run.sh"]
+COPY bucket/ ./bucket
+COPY push.sh .
+COPY Makefile .
