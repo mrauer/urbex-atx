@@ -36,7 +36,7 @@
          
          $.getJSON("data.geojson", function(data) {
          function onEachFeature(feature, layer) {
-         layer.bindPopup("Name: <strong>" + feature.properties.Name + "</strong><br>" + "Verified: " + feature.properties.Verified);
+         layer.bindPopup("Name: <strong>" + feature.properties.name + "</strong>" + "<br/>Official Name: " + feature.properties.official_name + "<br/>Last Verified: " + feature.properties.last_verified + "<br/>Years: " + feature.properties.years);
          }   
          var geojson = L.geoJson(data, {
          onEachFeature: onEachFeature
