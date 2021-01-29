@@ -6,13 +6,15 @@
          "geometry":{
             "type":"Point",
             "coordinates":[
-               -97.570525,
-               30.482996
+               -97.570463,
+               30.4833621
             ]
          },
          "properties":{
-            "Name":"Old Barn",
-            "Verified":"No"
+            "name":"Old Barn",
+            "official_name":"Unknown",
+            "last_verified":"Not Verified",
+            "years":"Unknown"
          }
       },
       {
@@ -20,13 +22,63 @@
          "geometry":{
             "type":"Point",
             "coordinates":[
-               -97.679479,
-               30.398419
+               -97.680264,
+               30.401464
             ]
          },
          "properties":{
-            "Name":"Abandoned Zoo",
-            "Verified":"No"
+            "name":"Abandoned Zoo",
+            "official_name":"Coxville Zoo",
+            "last_verified":"Mar 2019",
+            "years":"1939-1969"
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.780656,
+               30.371842
+            ]
+         },
+         "properties":{
+            "name":"Abandoned VW bus",
+            "official_name":"Abandoned VW bus",
+            "last_verified":"Aug 2020",
+            "years":"Unknown"
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.777897,
+               30.177819
+            ]
+         },
+         "properties":{
+            "name":"Abandoned Water Slide",
+            "official_name":"Austin Aqua Thrill Way",
+            "last_verified":"Sep 2020",
+            "years":"1978-1985"
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.663177,
+               30.286325
+            ]
+         },
+         "properties":{
+            "name":"Abandoned Strip Mall",
+            "official_name":"Unknown",
+            "last_verified":"Aug 2020",
+            "years":"Unknown"
          }
       }
    ]
