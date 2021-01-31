@@ -21,7 +21,7 @@
 <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#what-is-urban-exploration">What is Urban Exploration</a></li>
+    <li><a href="#what-is-urban-exploration">What is Urban Exploration?</a></li>
     <li><a href="#contribute">Contribute</a></li>
   </ol>
 
@@ -30,7 +30,7 @@
 
 The objective of this project is to create an exhaustive map of hidden gems in the Austin area from ruins, to accessible roofs, tunnels, caves, etc ... in the Austin, TX area. The technologies used for this project have been kept simple for an easy maintenance.
 
-We're live at: [http://www.urbex-atx.link/](http://www.urbex-atx.link/)!
+We're live at: [http://www.urbex-atx.link/](http://www.urbex-atx.link/) !
 
 <!--WHAT IS URBAN EXPLORATION -->
 ## What is Urban Exploration?
