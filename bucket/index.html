@@ -33,10 +33,18 @@
          });
          attribution = map.attributionControl;
          attribution.setPrefix('<a href="//github.com/mrauer/urbex-atx/issues" target="_blank" title="Add to the map"><b>Suggest a Location</b></a>&nbsp;|&nbsp;<a href="//leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
-         L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-             id: "examples.map-20v6611k",
-         }).addTo(map);
-         
+
+         var osm = L.tileLayer("//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);;
+         googleSat = L.tileLayer('//{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',
+           {subdomains:['mt0','mt1','mt2','mt3']});
+
+         var overlays =  {};
+         var baseMaps = {
+           "Street": osm,
+           "Satellite": googleSat
+         };
+         L.control.layers(baseMaps,overlays, {position: 'bottomleft'}).addTo(map);
+
          $.getJSON("data.geojson", function(data) {
          function onEachFeature(feature, layer) {
          layer.bindPopup("Name: <strong>" + feature.properties.name + "</strong>" + "<br/>Official Name: " + feature.properties.official_name + "<br/>Last Verified: " + feature.properties.last_verified + "<br/>Years: " + feature.properties.years + "<br/><a href='//maps.google.com/maps?daddr="+feature.geometry.coordinates[1]+','+feature.geometry.coordinates[0]+"&amp;ll=' target='_blank'>Go there</a>&nbsp;&nbsp;<a href='" + feature.properties.more_info + "'>More Info</a>");
