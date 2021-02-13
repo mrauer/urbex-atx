@@ -39,7 +39,7 @@
          
          $.getJSON("data.geojson", function(data) {
          function onEachFeature(feature, layer) {
-         layer.bindPopup("Name: <strong>" + feature.properties.name + "</strong>" + "<br/>Official Name: " + feature.properties.official_name + "<br/>Last Verified: " + feature.properties.last_verified + "<br/>Years: " + feature.properties.years + "<br/><a href='//maps.google.com/maps?daddr="+feature.geometry.coordinates[1]+','+feature.geometry.coordinates[0]+"&amp;ll=' target='_blank'>Go there</a>");
+         layer.bindPopup("Name: <strong>" + feature.properties.name + "</strong>" + "<br/>Official Name: " + feature.properties.official_name + "<br/>Last Verified: " + feature.properties.last_verified + "<br/>Years: " + feature.properties.years + "<br/><a href='//maps.google.com/maps?daddr="+feature.geometry.coordinates[1]+','+feature.geometry.coordinates[0]+"&amp;ll=' target='_blank'>Go there</a>&nbsp;&nbsp;<a href='" + feature.properties.more_info + "'>More Info</a>");
          }
          var geojson = L.geoJson(data, {
          onEachFeature: onEachFeature
