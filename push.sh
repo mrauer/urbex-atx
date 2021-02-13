@@ -2,3 +2,4 @@
 
 aws s3 cp bucket/index.html s3://"$BUCKET_NAME"
 aws s3 cp bucket/data.geojson s3://"$BUCKET_NAME"
+aws s3 cp bucket/favicon.png s3://"$BUCKET_NAME"

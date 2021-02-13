@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
       <link rel="stylesheet" href="//unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+      <link rel="shortcut icon" href="favicon.png"> 
       <style>
          html, body {
          height: 100%;
@@ -30,6 +31,8 @@
              maxZoom: 17,
              minZoom: 9,
          });
+         attribution = map.attributionControl;
+         attribution.setPrefix('<a href="https://github.com/mrauer/urbex-atx/issues" target="_blank" title="Add to the map"><b>Suggest a Location</b></a>&nbsp;|&nbsp;<a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
          L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
              id: "examples.map-20v6611k",
          }).addTo(map);
@@ -37,7 +40,7 @@
          $.getJSON("data.geojson", function(data) {
          function onEachFeature(feature, layer) {
          layer.bindPopup("Name: <strong>" + feature.properties.name + "</strong>" + "<br/>Official Name: " + feature.properties.official_name + "<br/>Last Verified: " + feature.properties.last_verified + "<br/>Years: " + feature.properties.years);
-         }   
+         }
          var geojson = L.geoJson(data, {
          onEachFeature: onEachFeature
          });
