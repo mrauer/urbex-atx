@@ -85,6 +85,74 @@
             "years":"Unknown",
             "more_info":"//www.youtube.com/watch?v=1PDeQuM6l28"
          }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.792861,
+               30.247675
+            ]
+         },
+         "properties":{
+            "name":"Airmen's Cave",
+            "official_name":"Airmen's Cave",
+            "last_verified":"Aug 2020",
+            "years":"1971",
+            "more_info":"//en.wikipedia.org/wiki/Airmen%27s_Cave"
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.644636,
+               30.209103
+            ]
+         },
+         "properties":{
+            "name":"Pre Civil War Old Mill",
+            "official_name":"Original McKinney Mill",
+            "last_verified":"Jan 2021",
+            "years":"1849",
+            "more_info":"//www.austinmonitor.com/stories/2008/07/original-mckinney-mill-on-the-way-toward-historic-designation/"
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.660736,
+               30.263110
+            ]
+         },
+         "properties":{
+            "name":"Abandoned Cement Plant",
+            "official_name":"Capitol Aggregates Inc",
+            "last_verified":"Jan 2021",
+            "years":"1963-2008",
+            "more_info":"//www.youtube.com/watch?v=bYuy1LBJJys"
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.746681,
+               30.331253
+            ]
+         },
+         "properties":{
+            "name":"Tunnel Shoal Creek",
+            "official_name":"TBD",
+            "last_verified":"Feb 2021",
+            "years":"Unknown",
+            "more_info":""
+         }
       }
    ]
 }
