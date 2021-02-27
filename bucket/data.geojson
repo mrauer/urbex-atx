@@ -91,23 +91,6 @@
          "geometry":{
             "type":"Point",
             "coordinates":[
-               -97.792861,
-               30.247675
-            ]
-         },
-         "properties":{
-            "name":"Airmen's Cave",
-            "official_name":"Airmen's Cave",
-            "last_verified":"Aug 2020",
-            "years":"1971",
-            "more_info":"//en.wikipedia.org/wiki/Airmen%27s_Cave"
-         }
-      },
-      {
-         "type":"Feature",
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
                -97.644636,
                30.209103
             ]
@@ -152,6 +135,57 @@
             "last_verified":"Feb 2021",
             "years":"Unknown",
             "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.751272,
+               30.258590
+            ]
+         },
+         "properties":{
+            "name":"Abandoned Florist Shop",
+            "official_name":"McPhail’s Florist",
+            "last_verified":"Not Verified",
+            "years":"1928-Unknown",
+            "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.771853,
+               30.169872
+            ]
+         },
+         "properties":{
+            "name":"Unmarked Cemetery",
+            "official_name":"Sutherland Cemetery",
+            "last_verified":"Not Verified",
+            "years":"1890-1982",
+            "more_info":"//https://historic.one/TX/travis-county/historic-cemetery/smith-family-cemetery"
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.810071,
+               30.471766
+            ]
+         },
+         "properties":{
+            "name":"Lakeline Mall Cave",
+            "official_name":"Unknown",
+            "last_verified":"Not Verified",
+            "years":"Unknown",
+            "more_info":"//www.youtube.com/watch?v=1xB-wE77pYY"
          }
       }
    ]
