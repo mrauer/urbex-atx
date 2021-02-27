@@ -1,5 +1,9 @@
 #!/bin/bash
 
-aws s3 cp bucket/index.html s3://"$BUCKET_NAME"
-aws s3 cp bucket/data.geojson s3://"$BUCKET_NAME"
-aws s3 cp bucket/favicon.png s3://"$BUCKET_NAME"
+for entry in "bucket"/*
+do
+  if [ $entry != "bucket/run.sh" ];
+  then
+    aws s3 cp "$entry" s3://"$BUCKET_NAME"
+  fi
+done
