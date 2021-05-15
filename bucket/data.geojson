@@ -187,6 +187,91 @@
             "years":"Unknown",
             "more_info":"//www.youtube.com/watch?v=1xB-wE77pYY"
          }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.692309,
+               30.179150
+            ]
+         },
+         "properties":{
+            "name":"Abandoned Bridge",
+            "official_name":"Unknown",
+            "last_verified":"May 2021",
+            "years":"Unknown",
+            "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.719610,
+               30.247169
+            ]
+         },
+         "properties":{
+            "name":"Shadowfax Island",
+            "official_name":"Unknown",
+            "last_verified":"Not Verified",
+            "years":"Unknown",
+            "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.720731,
+               30.454465
+            ]
+         },
+         "properties":{
+            "name":"White Lime Kilns",
+            "official_name":"Unknown",
+            "last_verified":"Mar 2021",
+            "years":"Unknown",
+            "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.7924167,
+               30.2418667
+            ]
+         },
+         "properties":{
+            "name":"Bullet Cave",
+            "official_name":"Bullet Cave",
+            "last_verified":"Apr 2021",
+            "years":"1977",
+            "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.7654028,
+               30.194475
+            ]
+         },
+         "properties":{
+            "name":"Abandoned Sneed Cemetery",
+            "official_name":"Unknown",
+            "last_verified":"Apr 2021",
+            "years":"Unknown",
+            "more_info":""
+         }
       }
    ]
 }
