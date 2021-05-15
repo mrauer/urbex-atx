@@ -3,7 +3,7 @@
 build:
 	docker build -t urbex-atx:latest .
 
-run:
+dev:
 	docker build -t urbex-atx:latest . && docker run --env-file .env -p 8000:8000 -it --rm -v ${CURDIR}/bucket:/usr/src/app/bucket urbex-atx:latest
 
 push:
