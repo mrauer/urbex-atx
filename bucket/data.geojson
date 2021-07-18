@@ -6,23 +6,6 @@
          "geometry":{
             "type":"Point",
             "coordinates":[
-               -97.570463,
-               30.4833621
-            ]
-         },
-         "properties":{
-            "name":"Old Barn",
-            "official_name":"Unknown",
-            "last_verified":"Not Verified",
-            "years":"Unknown",
-            "more_info":"//www.city-data.com/forum/austin/1340448-location-abandoned-old-homes.html"
-         }
-      },
-      {
-         "type":"Feature",
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
                -97.680264,
                30.401464
             ]
@@ -215,9 +198,9 @@
             ]
          },
          "properties":{
-            "name":"Shadowfax Island",
-            "official_name":"Unknown",
-            "last_verified":"Not Verified",
+            "name":"Snake Island",
+            "official_name":"Shadowfax Island",
+            "last_verified":"May 2021",
             "years":"Unknown",
             "more_info":""
          }
@@ -269,6 +252,91 @@
             "name":"Abandoned Sneed Cemetery",
             "official_name":"Unknown",
             "last_verified":"Apr 2021",
+            "years":"Unknown",
+            "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.643648,
+               30.509237
+            ]
+         },
+         "properties":{
+            "name":"Old Railroad Bridge",
+            "official_name":"Unknown",
+            "last_verified":"Jul 2021",
+            "years":"1929",
+            "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.793369,
+               30.418827
+            ]
+         },
+         "properties":{
+            "name":"Collapsed House",
+            "official_name":"Unknown",
+            "last_verified":"Jul 2021",
+            "years":"Unknown",
+            "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.769039,
+               30.383167
+            ]
+         },
+         "properties":{
+            "name":"Bull Creek Tunnel",
+            "official_name":"Unknown",
+            "last_verified":"Jul 2021",
+            "years":"Unknown",
+            "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.663682,
+               30.168843
+            ]
+         },
+         "properties":{
+            "name":"Moore's Crossing Bridge",
+            "official_name":"Moore's Crossing Bridge",
+            "last_verified":"Not Verified",
+            "years":"Unknown",
+            "more_info":""
+         }
+      },
+      {
+         "type":"Feature",
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -97.748052,
+               30.362992
+            ]
+         },
+         "properties":{
+            "name":"Spicewood Spring",
+            "official_name":"Spicewood Spring",
+            "last_verified":"Not Verified",
             "years":"Unknown",
             "more_info":""
          }
